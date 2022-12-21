@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glucose App</title>
+
+</head>
+
+<body>
+    <h1>Welcome To Your Glucose Application</h1>
+    
+    <form id ="user_info" method="post" action="/submit">
+        <label for="Date">Date and Time:</label>
+        <input type="datetime-local" id="Date" name="Date">
+        <br>
+        <label for="Name">Meter Name:</label>
+        <input type="text" id="Name" name="Name">
+        <br>
+        <label for="Glucose Level">Glucose Level:</label>
+        <input type="text" id="glucose_level" name="glucose_level">
+        <input type="submit" value="Submit" id="submit" />
+    </form>
+    <br>
+    <form id ="user_history" method="post" action="/history">
+        <input type="submit" value="history" id="history" >
+    </form>
+    <br>
+    
+  
+</body>
+
+</html>
